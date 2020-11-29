@@ -1,0 +1,79 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+	{
+		"key": "alt+backspace",
+		"command": "editor.action.deleteLines",
+		"when": "textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+shift+k",
+		"command": "-editor.action.deleteLines",
+		"when": "textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+shift+up",
+		"command": "workbench.action.moveEditorRightInGroup"
+	},
+	{
+		"key": "ctrl+shift+pagedown",
+		"command": "-workbench.action.moveEditorRightInGroup"
+	},
+	{
+		"key": "ctrl+shift+down",
+		"command": "workbench.action.moveEditorLeftInGroup"
+	},
+	{
+		"key": "ctrl+shift+pageup",
+		"command": "-workbench.action.moveEditorLeftInGroup"
+	},
+	{
+		"key": "n e",
+		"command": "python.datascience.runcurrentcell",
+		"when": "editorTextFocus && python.datascience.featureenabled && python.datascience.hascodecells && !editorHasSelection && !notebookEditorFocused"
+	},
+	{
+		"key": "ctrl+enter",
+		"command": "-python.datascience.runcurrentcell",
+		"when": "editorTextFocus && python.datascience.featureenabled && python.datascience.hascodecells && !editorHasSelection && !notebookEditorFocused"
+	},
+	{
+		"key": "ctrl+f9",
+		"command": "python.datascience.runcurrentcelladvance",
+		"when": "editorTextFocus && python.datascience.featureenabled && python.datascience.hascodecells && !editorHasSelection && !notebookEditorFocused"
+	},
+	{
+		"key": "shift+enter",
+		"command": "-python.datascience.runcurrentcelladvance",
+		"when": "editorTextFocus && python.datascience.featureenabled && python.datascience.hascodecells && !editorHasSelection && !notebookEditorFocused"
+	},
+	{
+		"key": "ctrl+f10",
+		"command": "python.datascience.execSelectionInteractive",
+		"when": "editorTextFocus && python.datascience.featureenabled && python.datascience.ownsSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+	},
+	{
+		"key": "shift+enter",
+		"command": "-python.datascience.execSelectionInteractive",
+		"when": "editorTextFocus && python.datascience.featureenabled && python.datascience.ownsSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+	},
+	{
+		"key": "ctrl+f8 ctrl+f9",
+		"command": "python.execSelectionInTerminal",
+		"when": "editorTextFocus && !findInputFocussed && !python.datascience.ownsSelection && !replaceInputFocussed && editorLangId == 'python'"
+	},
+	{
+		"key": "shift+enter",
+		"command": "-python.execSelectionInTerminal",
+		"when": "editorTextFocus && !findInputFocussed && !python.datascience.ownsSelection && !replaceInputFocussed && editorLangId == 'python'"
+	},
+	{
+		"key": "ctrl+f7 ctrl+f5",
+		"command": "python.datascience.runcurrentcellandaddbelow",
+		"when": "editorTextFocus && python.datascience.featureenabled && python.datascience.hascodecells && !editorHasSelection && !notebookEditorFocused"
+	},
+	{
+		"key": "alt+enter",
+		"command": "-python.datascience.runcurrentcellandaddbelow",
+		"when": "editorTextFocus && python.datascience.featureenabled && python.datascience.hascodecells && !editorHasSelection && !notebookEditorFocused"
+	}
+]
