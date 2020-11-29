@@ -1,6 +1,6 @@
 {
     "files.autoSave": "afterDelay",
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
     "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
     "liveshare.presence": true,
     "editor.detectIndentation": false,
@@ -22,7 +22,7 @@
 	"files.trimTrailingWhitespace": true,
 	"files.insertFinalNewline": true,
 	"files.associations": {
-		"*.h": "c"
+		"*.h": "c",
 	},
 	//"python.pythonPath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Python36_64\\python.exe",
 	"workbench.colorTheme": "Visual Studio Dark",
@@ -99,6 +99,5 @@
 	"terminal.integrated.fontSize": 10,
 	"terminal.integrated.letterSpacing": 1,
 	"terminal.integrated.scrollback": 2000,
-	"todo-tree.tree.showScanModeButton": false,
 	//"window.menuBarVisibility": "default"
 }
