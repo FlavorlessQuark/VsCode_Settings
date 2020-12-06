@@ -15,7 +15,7 @@
 	"Input from file" : {
 		"prefix" : "read_file",
 		"body" : [
-			"with open('test') as input:",
+			"with open('input') as input:",
 			"\tinp = [$1 for line in input]",
 			"$2"
 		],
@@ -28,11 +28,19 @@
 		],
 		"description": "Print solution"
 	},
-	"Include re" : {
-		"prefix" : "im_re",
+	"Re exp" : {
+		"prefix" : "rexp",
 		"body" : [
-			"import re"
+			"exp = re.compile(r'$1')"
 		],
-		"description": "Import regex"
+		"description": "Re expression"
+	},
+
+	"Re nums" : {
+		"prefix" : "renum",
+		"body" : [
+			"exp = re.compile(r'(\\d+)')"
+		],
+		"description": "Re to find nums"
 	},
 }
